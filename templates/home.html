@@ -34,6 +34,7 @@
     <!-- Favicon  -->
     <link rel="icon" href="{% static 'website/images/favicon.png' %}">
 </head>
+
 <body data-spy="scroll" data-target=".fixed-top">
 
 <!-- Preloader -->
@@ -50,11 +51,9 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
     <!-- Text Logo - Use this if you don't have a graphic logo -->
-    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
     <!-- Image Logo -->
-    <a class="navbar-brand logo-image" href="home.html"><img src="{% static 'website/images/logo.svg' %}"
-                                                             alt="alternative"></a>
+    <a style="color: white" href="home.html">Benjamin Scialom</a>
 
     <!-- Mobile Menu Toggle Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
@@ -67,22 +66,20 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                <a class="nav-link page-scroll" href="#header">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="#intro">INTRO</a>
+                <a class="nav-link page-scroll" href="#intro">About Me</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="#services">SERVICES</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link page-scroll" href="#callMe">CALL</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link page-scroll" href="#projects">PROJECTS</a>
+                <a class="nav-link page-scroll" href="#services">Finance</a>
             </li>
 
-            <!-- Dropdown Menu -->
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="#projects">Photos</a>
+            </li>
+
+            <!-- Dropdown Menu
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button"
                    aria-haspopup="true" aria-expanded="false">ABOUT</a>
@@ -94,27 +91,29 @@
                             class="item-text">PRIVACY POLICY</span></a>
                 </div>
             </li>
-            <!-- end of dropdown menu -->
+             end of dropdown menu -->
 
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                <a class="nav-link page-scroll" href="#contact">Contact Me</a>
             </li>
         </ul>
         <span class="nav-item social-icons">
                 <span class="fa-stack">
-                    <a href="">
+                    <a href="https://www.instagram.com/thefrenchbearpictures/?hl=fr">
                         <span class="hexagon"></span>
-                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
                     </a>
                 </span>
                 <span class="fa-stack">
-                    <a href="">
+                    <a href="https://github.com/BenjaminScialom">
                         <span class="hexagon"></span>
-                        <i class="fab fa-twitter fa-stack-1x"></i>
+                        <i class="fab fa-github fa-stack-1x"></i>
                     </a>
                 </span>
-            </span>
+        </span>
+
     </div>
+
 </nav> <!-- end of navbar -->
 <!-- end of navbar -->
 
@@ -126,10 +125,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-container">
-                        <h1>BUSINESS <span id="js-rotating">TEMPLATE, SERVICES, SOLUTIONS</span></h1>
-                        <p class="p-heading p-large">Aria is a top consultancy company specializing in business growth
-                            using online marketing and conversion optimization tactics</p>
-                        <a class="btn-solid-lg page-scroll" href="#intro">DISCOVER</a>
+                        <h1><span id="js-rotating">Finance, Programming, Photography, Sports</span>
+                        </h1>
+                        <h4 class="p-heading p-large"> Don't stop at my hobbies! </h4>
+                        <a class="btn-solid-lg page-scroll" href="#intro">More</a>
                     </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -145,22 +144,133 @@
         <div class="row">
             <div class="col-lg-5">
                 <div class="text-container">
-                    <div class="section-title">INTRO</div>
-                    <h2>We Offer Some Of The Best Business Growth Services In Town</h2>
-                    <p>Launching a new company or developing the market position of an existing one can be quite an
-                        overwhelming processs at times.</p>
-                    <p class="testimonial-text">"Our mission here at Aira is to get you through those tough moments
-                        relying on our team's expertise in starting and growing companies."</p>
-                    <div class="testimonial-author">Louise Donovan - CEO</div>
+                    <div class="section-title"> About me</div>
+                    <h2>Quantitative Developer/ Software Engineer</h2>
+                    <p> Developing software, libraries and exploring data is what I like todo daily. Finance is evolving
+                        rapidly with the use of machine learning, deep learning or natural language processing and
+                        I want to be part of this evolution! </p>
+                    <p class="testimonial-text">"“Many investment managers believe that the secret to riches is to
+                        implement an extremely complex ML algorithm. They are setting themselves up for a
+                        disappointment. If it was as easy as coding a state-of-the-art classifier, most people in
+                        Silicon Valley would be billionaires.”"</p>
+                    <div class="testimonial-author">Marco Lopez de Prado</div>
                 </div> <!-- end of text-container -->
             </div> <!-- end of col -->
             <div class="col-lg-7">
                 <div class="image-container">
-                    <img class="img-fluid" src="{% static 'website/images/intro-office.jpg' %}" alt="alternative">
+                    <img class="img-fluid" src="{% static 'website/images/Benjamin1.jpg' %}" width="450" height="500"
+                         alt="alternative">
                 </div> <!-- end of image-container -->
             </div> <!-- end of col -->
         </div> <!-- end of row -->
-    </div> <!-- end of container -->
+        <div class="slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Competences</h2>
+                    </div> <!-- end of col -->
+                    <div class="col-lg-12">
+
+                    <!-- Card Slider -->
+                        <div class="slider-container">
+                            <div class="swiper-container card-slider">
+                                <div class="swiper-wrapper">
+
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image"
+                                                 src="{% static 'website/images/python.png' %}"
+                                                 alt="alternative">
+                                            <div class="card-body">
+                                                <div class="testimonial-author">Python</div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image"
+                                                 src="{% static 'website/images/c_sharp.png' %}"
+                                                 alt="alternative">
+                                            <div class="card-body">
+                                                <div class="testimonial-author">C#</div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image"
+                                                 src="{% static 'website/images/sql.png' %}"
+                                                 alt="alternative">
+                                            <div class="card-body">
+                                                <div class="testimonial-author">SQL</div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image"
+                                                 src="{% static 'website/images/git.png' %}"
+                                                 alt="alternative">
+                                            <div class="card-body">
+                                                <div class="testimonial-author">Git</div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image"
+                                                 src="{% static 'website/images/excel.png' %}"
+                                                 alt="alternative">
+                                            <div class="card-body">
+                                                <div class="testimonial-author">Excel</div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image"
+                                                 src="{% static 'website/images/ppt.png' %}"
+                                                 alt="alternative">
+                                            <div class="card-body">
+                                                <div class="testimonial-author"> PowerPoint
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                            </div> <!-- end of swiper-wrapper -->
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of sliedr-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div>
+    </div>
+</div> <!-- end of container -->
 </div> <!-- end of basic-1 -->
 <!-- end of intro -->
 
@@ -323,219 +433,219 @@
     <div class="col-xl-6">
         <div class="accordion">
 
-                <!-- Accordion -->
-                <div class="accordion-container" id="accordionOne">
-                    <h2>Accelerate Business Growth To Improve Revenue Numbers</h2>
+            <!-- Accordion -->
+            <div class="accordion-container" id="accordionOne">
+                <h2>Accelerate Business Growth To Improve Revenue Numbers</h2>
 
-                    <div class="item">
-                        <div id="headingOne">
+                <div class="item">
+                    <div id="headingOne">
                         <span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                               aria-controls="collapseOne" role="button">
                             <span class="circle-numbering">1</span><span class="accordion-title">How Can Aria Help Your Business</span>
                         </span>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                         data-parent="#accordionOne">
+                        <div class="accordion-body">
+                            At Aria solutions, we’ve taken the consultancy concept one step further by offering a
+                            full
+                            service management organization with expertise.
                         </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                             data-parent="#accordionOne">
-                            <div class="accordion-body">
-                                At Aria solutions, we’ve taken the consultancy concept one step further by offering a
-                                full
-                                service management organization with expertise.
-                            </div>
-                        </div>
-                    </div> <!-- end of item -->
+                    </div>
+                </div> <!-- end of item -->
 
-                    <div class="item">
-                        <div id="headingTwo">
+                <div class="item">
+                    <div id="headingTwo">
                         <span class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                               aria-controls="collapseTwo" role="button">
                             <span class="circle-numbering">2</span><span class="accordion-title">Great Strategic Business Planning</span>
                         </span>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionOne">
+                        <div class="accordion-body">
+                            Aria partners with businesses to business growth and development ideas including
+                            environment
+                            analysis, plan execution and evaluation.
                         </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionOne">
-                            <div class="accordion-body">
-                                Aria partners with businesses to business growth and development ideas including
-                                environment
-                                analysis, plan execution and evaluation.
-                            </div>
-                        </div>
-                    </div> <!-- end of item -->
+                    </div>
+                </div> <!-- end of item -->
 
-                    <div class="item">
-                        <div id="headingThree">
+                <div class="item">
+                    <div id="headingThree">
                         <span class="collapsed" data-toggle="collapse" data-target="#collapseThree"
                               aria-expanded="false" aria-controls="collapseThree" role="button">
                             <span class="circle-numbering">3</span><span class="accordion-title">Online Marketing Campaigns</span>
                         </span>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                         data-parent="#accordionOne">
+                        <div class="accordion-body">
+                            An awesome online marketing plan won't save your bad product but paired with a good
+                            product,
+                            the
+                            sky is the limit for what can be achieved.
                         </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                             data-parent="#accordionOne">
-                            <div class="accordion-body">
-                                An awesome online marketing plan won't save your bad product but paired with a good
-                                product,
-                                the
-                                sky is the limit for what can be achieved.
-                            </div>
-                        </div>
-                    </div> <!-- end of item -->
-                </div> <!-- end of accordion-container -->
-                <!-- end of accordion -->
+                    </div>
+                </div> <!-- end of item -->
+            </div> <!-- end of accordion-container -->
+            <!-- end of accordion -->
 
-            </div> <!-- end of area-2 -->
+        </div> <!-- end of area-2 -->
     </div>
     <div class="col-xl-6">
         <div class="tabs">
-                <div class="tabs-container">
+            <div class="tabs-container">
 
-                    <!-- Tabs Links -->
-                    <ul class="nav nav-tabs" id="ariaTabs" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab"
-                               aria-controls="tab-1" aria-selected="true"><i class="fas fa-th"></i> Business</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab"
-                               aria-controls="tab-2"
-                               aria-selected="false"><i class="fas fa-th"></i> Expertise</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab"
-                               aria-controls="tab-3"
-                               aria-selected="false"><i class="fas fa-th"></i> Quality</a>
-                        </li>
-                    </ul>
-                    <!-- end of tabs links -->
+                <!-- Tabs Links -->
+                <ul class="nav nav-tabs" id="ariaTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab"
+                           aria-controls="tab-1" aria-selected="true"><i class="fas fa-th"></i> Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab"
+                           aria-controls="tab-2"
+                           aria-selected="false"><i class="fas fa-th"></i> Expertise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab"
+                           aria-controls="tab-3"
+                           aria-selected="false"><i class="fas fa-th"></i> Quality</a>
+                    </li>
+                </ul>
+                <!-- end of tabs links -->
 
-                    <!-- Tabs Content -->
-                    <div class="tab-content" id="ariaTabsContent">
+                <!-- Tabs Content -->
+                <div class="tab-content" id="ariaTabsContent">
 
-                        <!-- Tab -->
-                        <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
-                            <h4>Business Services For Companies</h4>
-                            <p>Aria provides the most innovative and customized business services in the industry. Our
-                                <a
-                                        class="green page-scroll" href="#services">Services</a> section shows how
-                                flexible we
-                                are
-                                for all types of budgets.</p>
+                    <!-- Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                        <h4>Business Services For Companies</h4>
+                        <p>Aria provides the most innovative and customized business services in the industry. Our
+                            <a
+                                    class="green page-scroll" href="#services">Services</a> section shows how
+                            flexible we
+                            are
+                            for all types of budgets.</p>
 
-                            <!-- Progress Bars -->
-                            <div class="progress-container">
-                                <div class="title">Business Development 100%</div>
-                                <div class="progress">
-                                    <div class="progress-bar first" role="progressbar" aria-valuenow="0"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100"></div>
+                        <!-- Progress Bars -->
+                        <div class="progress-container">
+                            <div class="title">Business Development 100%</div>
+                            <div class="progress">
+                                <div class="progress-bar first" role="progressbar" aria-valuenow="0"
+                                     aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
+                            <div class="title">Opportunity Spotting 76%</div>
+                            <div class="progress">
+                                <div class="progress-bar second" role="progressbar" aria-valuenow="75"
+                                     aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
+                            <div class="title">Online Marketing 90%</div>
+                            <div class="progress">
+                                <div class="progress-bar third" role="progressbar" aria-valuenow="90"
+                                     aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
+                        </div> <!-- end of progress-container -->
+                        <!-- end of progress bars -->
+
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                        <ul class="list-unstyled li-space-lg first">
+                            <li class="media">
+                                <div class="media-bullet">1</div>
+                                <div class="media-body"><strong>High quality</strong> is on top of our list when it
+                                    comes to
+                                    the way we deliver the services
                                 </div>
-                                <div class="title">Opportunity Spotting 76%</div>
-                                <div class="progress">
-                                    <div class="progress-bar second" role="progressbar" aria-valuenow="75"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100"></div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">2</div>
+                                <div class="media-body"><strong>Maximum impact</strong> is what we look for in our
+                                    actions
                                 </div>
-                                <div class="title">Online Marketing 90%</div>
-                                <div class="progress">
-                                    <div class="progress-bar third" role="progressbar" aria-valuenow="90"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100"></div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">3</div>
+                                <div class="media-body"><strong>Quality standards</strong> are important but meant
+                                    to be
+                                    exceeded
                                 </div>
-                            </div> <!-- end of progress-container -->
-                            <!-- end of progress bars -->
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled li-space-lg last">
+                            <li class="media">
+                                <div class="media-bullet">4</div>
+                                <div class="media-body"><strong>We're always looking</strong> for industry leaders
+                                    to
+                                    help
+                                    them win their market position
+                                </div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">5</div>
+                                <div class="media-body"><strong>Evaluation</strong> is a key aspect of this business
+                                    and
+                                    important
+                                </div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">6</div>
+                                <div class="media-body"><strong>Ethic</strong> procedures ar alwasy at the base of
+                                    everything we do
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
 
-                        </div> <!-- end of tab-pane -->
-                        <!-- end of tab -->
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                        <p><strong>We strive to achieve</strong> 100% customer satisfaction for both types of
+                            customers:
+                            hiring companies and job seekers. Types of customers: <a class="green" href="">with huge
+                                potential</a></p>
+                        <p><strong>Our goal is to help</strong> your company achieve its full potential and
+                            establish
+                            long
+                            term stability for <a class="green" href="">the stakeholders</a></p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">It's easy to get a quotation, just call our office anytime
+                                </div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">We'll get back to you with an initial estimate soon</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Get ready to see results even after only 30 days</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Ask for a quote and start improving your business</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Just fill out the form and we'll call you right away</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
 
-                        <!-- Tab -->
-                        <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
-                            <ul class="list-unstyled li-space-lg first">
-                                <li class="media">
-                                    <div class="media-bullet">1</div>
-                                    <div class="media-body"><strong>High quality</strong> is on top of our list when it
-                                        comes to
-                                        the way we deliver the services
-                                    </div>
-                                </li>
-                                <li class="media">
-                                    <div class="media-bullet">2</div>
-                                    <div class="media-body"><strong>Maximum impact</strong> is what we look for in our
-                                        actions
-                                    </div>
-                                </li>
-                                <li class="media">
-                                    <div class="media-bullet">3</div>
-                                    <div class="media-body"><strong>Quality standards</strong> are important but meant
-                                        to be
-                                        exceeded
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="list-unstyled li-space-lg last">
-                                <li class="media">
-                                    <div class="media-bullet">4</div>
-                                    <div class="media-body"><strong>We're always looking</strong> for industry leaders
-                                        to
-                                        help
-                                        them win their market position
-                                    </div>
-                                </li>
-                                <li class="media">
-                                    <div class="media-bullet">5</div>
-                                    <div class="media-body"><strong>Evaluation</strong> is a key aspect of this business
-                                        and
-                                        important
-                                    </div>
-                                </li>
-                                <li class="media">
-                                    <div class="media-bullet">6</div>
-                                    <div class="media-body"><strong>Ethic</strong> procedures ar alwasy at the base of
-                                        everything we do
-                                    </div>
-                                </li>
-                            </ul>
-                        </div> <!-- end of tab-pane -->
-                        <!-- end of tab -->
+                </div> <!-- end of tab-content -->
+                <!-- end of tabs content -->
 
-                        <!-- Tab -->
-                        <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-                            <p><strong>We strive to achieve</strong> 100% customer satisfaction for both types of
-                                customers:
-                                hiring companies and job seekers. Types of customers: <a class="green" href="">with huge
-                                    potential</a></p>
-                            <p><strong>Our goal is to help</strong> your company achieve its full potential and
-                                establish
-                                long
-                                term stability for <a class="green" href="">the stakeholders</a></p>
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">It's easy to get a quotation, just call our office anytime
-                                    </div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">We'll get back to you with an initial estimate soon</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Get ready to see results even after only 30 days</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Ask for a quote and start improving your business</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Just fill out the form and we'll call you right away</div>
-                                </li>
-                            </ul>
-                        </div> <!-- end of tab-pane -->
-                        <!-- end of tab -->
+            </div> <!-- end of tabs-container -->
 
-                    </div> <!-- end of tab-content -->
-                    <!-- end of tabs content -->
-
-                </div> <!-- end of tabs-container -->
-
-            </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space -->
+        </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space -->
     </div>
 </div>
 
