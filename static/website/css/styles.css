@@ -852,6 +852,9 @@ input[type='checkbox'] {
 .cards-1 {
 	padding-top: 3rem;
 	padding-bottom: 2.875rem;
+	margin-right: auto;
+	margin-left: auto;
+
 }
 
 .cards-1 .card {
@@ -981,6 +984,7 @@ input[type='checkbox'] {
 	margin-left: auto;
 	padding-top: 6.375rem;
 	padding-bottom: 1.5rem;
+	height: auto;
 }
 
 .accordion h2 {
